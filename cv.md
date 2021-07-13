@@ -7,15 +7,13 @@ ___
 **Email:** Smer***oot@gmail.com
 ___
 ## Brief information
-```code
 Developer of Java. I strive to understand fullstack and devops. For the last three years I have been engaged in constant self-study on paid and free courses, but not everything can be applied at my current job.
 
 Translated Java-documentation; wrote articles about the generation of reports in Word, Excel, PDF formats; working with PostgreSQL for an internal resource and my blog.
-```
 ___
 ## Skills
-```code
 **My skills on current job:**
+```code
 Java, Spring Framework, Spring Boot, 
 JUnit4/5, Mockito, Apach POI, Apache Maven, REST, SOAP, GIT, 
 JPA, Hibernate ORM, PostgreSQL, Oracle Pl/SQL, thymleaf, 
