@@ -18,8 +18,9 @@ Java, Spring Framework, Spring Boot,
 JUnit4/5, Mockito, Apach POI, Apache Maven, REST, SOAP, GIT, 
 JPA, Hibernate ORM, PostgreSQL, Oracle Pl/SQL, thymleaf, 
 NetBeans, Mercurial, Confluence
-
+```
 **Skills by courses or not large work tasks:**
+```code
 jOOQ, Groovy, Intellij IDEA, Docker, ELK, Python, JS, WildFly
 ```
 ___
