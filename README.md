@@ -1,1 +1,0 @@
-https://SmershRoot.github.io/rsschool-cv/cv
