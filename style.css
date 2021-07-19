@@ -1,0 +1,104 @@
+.cv {
+	margin: auto;
+	width: 880px;
+    background-image: linear-gradient(to right, #f8f8f8 0%, #f8f8f8 330px, #ffffff 330px);;
+}
+
+/*Left Block*/
+
+.left-block {
+    position: relative;
+    float: left;
+    width: 270px;
+    padding: 30px;
+    box-sizing: content-box;
+    /*background: #f8f8f8;*/
+}
+.avatar_image img {
+    width: 100%;
+    border-radius: 100%;
+}
+.fio {
+    color: #39739b;
+    font-size: 23px;
+}
+.curent-postion {
+    font-size: 16px;
+    margin-top: 10px;
+	margin-bottom: 20px;
+}
+.phone-icons {
+	width: 16px;
+	vertical-align: middle;
+}
+
+
+/*Right Block*/
+
+.right-block {
+    float: left;
+    width: 530px;
+    padding: 20px 0 20px 19px;
+    box-sizing: content-box;
+}
+.section_icon {
+    height: 20px;
+    width: 20px;
+}
+.right-block {
+    margin-bottom: 20px;
+}
+.right-block .section_left {
+    float: left;
+    width: 150px;
+    padding-right: 20px;
+}
+
+.right-block .section_right {
+    float: left;
+    width: 360px;
+}
+
+/*Print Block*/
+
+.print-block {
+    margin-left: 100px;
+}
+
+/*OTHER*/
+.separator {
+    border-top: 1px solid #42404015;
+    margin: 20px 0;
+}
+.hard_separator {
+    border-top: 2px solid #4240404d;
+    margin: 20px 0;
+}
+.section_header {
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 60%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    height: 50px;
+    width: 880px;
+    margin: auto;
+}
+.rslogo {
+    height: 50px;
+}
