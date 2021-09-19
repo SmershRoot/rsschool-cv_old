@@ -1,7 +1,178 @@
 .cv {
-	margin: auto;
-	width: 880px;
-    background-image: linear-gradient(to right, #f8f8f8 0%, #f8f8f8 330px, #ffffff 330px);;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+@media (max-width: 850px) {
+    .cv {
+        width: 100%;
+    }
+}
+
+/*HEADER*/
+
+header {
+    background: #807474;
+}
+
+.navigator {
+    width: 80%;
+    margin: auto;
+}
+
+.navigator>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigator>ul>li {
+    list-style: none;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1700px) {
+    .navigator>ul>li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .navigator>ul>li {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .navigator>ul>li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .navigator>ul>li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navigator>ul>li {
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navigator>ul>li {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navigator>ul>li {
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navigator>ul>li {
+        font-size: 13px;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navigator>ul>li {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 850px) {
+    header {
+        height: 60px;
+    }
+    .navigator {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        background: #807474;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+        transition: all 0.4s ease;
+        left: -100%;
+    }
+    .navigator>ul {
+        display: block;
+        justify-content: space-around;
+    }
+    .navigator>ul>li {
+        font-size: 22px;
+        letter-spacing: 0px;
+        margin: 40px 0px;
+    }
+    .navigator.open-menu {
+        left: 0;
+        margin: 8px;
+    }
+    .burger-menu {
+        position: relative;
+        width: 40px;
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+        top: 10px;
+    }
+    .burger-menu span, .burger-menu:after, .burger-menu:before {
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+    .burger-menu span {
+        top: 16px;
+    }
+    .burger-menu:after, .burger-menu:before {
+        content: '';
+    }
+    .burger-menu:after {
+        bottom: 5px;
+    }
+    .burger-menu:before {
+        top: 5px;
+    }
+    .burger-menu.open-menu span {
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .burger-menu.open-menu:before {
+        transform: rotate(38deg);
+        top: 16px;
+        transition: 0.4s;
+    }
+    .burger-menu.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 16px;
+        transition: 0.4s;
+    }
+    .content-wrapper {
+        margin-top: 48px;
+    }
+    .fixed-pade {
+        overflow: hidden;
+    }
+}
+
+.even_a {
+    color: black;
+}
+
+.odd_a {
+    color: white;
 }
 
 /*Left Block*/
@@ -9,27 +180,82 @@
 .left-block {
     position: relative;
     float: left;
-    width: 270px;
+    /*width: 270px;*/
     padding: 30px;
     box-sizing: content-box;
-    /*background: #f8f8f8;*/
+    background-color: #f8f8f8;
+    width: 40%;
 }
+
+@media (max-width: 850px) {
+    .left-block {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .left-block {
+        padding: 0px;
+    }
+    .avatar {
+        width: 80%;
+    }
+}
+
 .avatar_image img {
     width: 100%;
     border-radius: 100%;
 }
+
 .fio {
     color: #39739b;
 }
+
 .curent-postion {
     font-size: 16px;
     margin-top: 10px;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .phone-icons {
-	width: 16px;
-	vertical-align: middle;
-	margin-left: 5px;
+    width: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.my_project {
+    position: relative;
+    padding-top: 47%;
+}
+
+.my_project img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.my_project h4, span{
+    color:#710707;
+}
+
+#projects a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#projects a:visited {
+    color: black;
+}
+
+#projects a:hover {
+    color: #9D8665;
+}
+
+#projects a:active {
+    color: #9D8665;
 }
 
 
@@ -37,14 +263,36 @@
 
 .right-block {
     float: left;
-    width: 530px;
+    /*width: 530px;*/
     padding: 20px 0 20px 19px;
     box-sizing: content-box;
+    width: 50%;
 }
+
+pre code.hljs {
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+@media (max-width: 850px) {
+    .right-block {
+        width: 100%;
+        padding: 0px;
+    }
+    .education {
+        word-wrap: break-word;
+    }/*
+    pre code.hljs {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }*/
+}
+
 .img_icon {
     height: 20px;
     width: 20px;
 }
+
 aside {
     width: 60%;
     padding-left: .5rem;
@@ -55,7 +303,7 @@ aside {
     color: #29627e;
 }
 
-aside > p {
+aside>p {
     margin: .5rem;
 }
 
@@ -65,28 +313,54 @@ aside > p {
     margin-left: 100px;
 }
 
+@media (max-width: 850px) {
+    .print-block {
+        margin-left: 0px;
+    }
+    .print-button {
+        width: 100%;
+        height: 50px;
+    }
+}
+
 /*OTHER*/
+
 .separator {
     border-top: 1px solid #42404015;
     margin: 20px 0;
 }
+
 .hard_separator {
     border-top: 2px solid #4240404d;
     margin: 20px 0;
 }
+
 .section_header {
     margin-bottom: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*FOOTER*/
-footer{
+
+footer {
     display: flex;
     justify-content: space-around;
     padding: 5px;
-    height: 50px;
-    width: 880px;
+    /*width: 80%;*/
     margin: auto;
+    background: #807474;
 }
+
+@media (max-width: 850px) {
+    footer {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
 .rslogo {
-    height: 50px;
+    height: 30px;
 }
