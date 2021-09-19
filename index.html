@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>CV Scherbakov Alexandr</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/menu.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="header_navigator">
+            <div class="burger-menu">
+                <span></span>
+            </div>
+
+            <nav class="navigator">
+                <ul>
+                    <li><a class="even_a nav_item" href="#brief_information">BRIEF INFORMATION</a></li>
+                    <li><a class="odd_a nav_item" href="#section_work_experience">WORK EXPERIENCE</a></li>
+                    <li><a class="even_a nav_item" href="#educations">EDUCATION</a></li>
+                    <li><a class="odd_a nav_item" href="#code_examples">CODE EXAMPLES</a></li>
+                    <li><a class="even_a nav_item" href="#contacts">CONTACTS</a></li>
+                    <li><a class="odd_a nav_item" href="#skills">SKILLS</a></li>
+                    <li><a class="even_a nav_item" href="#english_level">ENGLISH LEVEL</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main class="cv">
         <div class="left-block">
             <div class="avatar">
@@ -20,13 +45,13 @@
                 </figure>
             </div>
             <div class="fio">
-                <h2>Scherbakov Alexandr</h2>
+                <h1>Scherbakov Alexandr</h1>
             </div>
             <div class="curent-postion">
-                <h3>Middle Java Developer</h3>
+                <h2>Middle Java Developer</h2>
             </div>
-            <div class="separator"></div>
-            <section>
+            <div class="hard_separator"></div>
+            <section id="contacts">
                 <h3><img class="img_icon" src="img/contacts.png" alt="c" />CONTACTS</h3>
                 <ul>
                     <li><b>Phone</b>: +7919***<img src="img/viber.png" alt="v" class="phone-icons" />
@@ -35,8 +60,8 @@
                     <li><b>Email</b>: Smer***oot@gmail.com</li>
                 </ul>
             </section>
-            <div class="separator"></div>
-            <section>
+            <div class="hard_separator"></div>
+            <section id="skills">
                 <h3><img class="img_icon" src="img/skills.png" alt="s" />SKILLS</h3>
                 <section>
                     <h4>My skills on current job</h4>
@@ -59,6 +84,7 @@
                         <li>NetBeans</li>
                         <li>Mercurial</li>
                         <li>Confluence</li>
+                        <li>MicroStrategy</li>
                     </ul>
                 </section>
                 <section>
@@ -70,21 +96,65 @@
                         <li>JavaScript</li>
                         <li>Docker</li>
                         <li>ELK</li>
+                        <li>Weblogic</li>
                         <li>WildFly</li>
                         <li>Intellij IDEA</li>
+                        <li>Figma</li>
                     </ul>
                 </section>
             </section>
-			<div class="separator"></div>
-			<section>
-				<h3><img class="img_icon" src="img/english.png" alt="el" />ENGLISH LEVEL</h3>
-				<ul>
-					<li>
-						<p>A2</p>
-						<p>At the moment, I am raising my lavel with an online-teacher</p>
-					</li>
-				</ul>
-			</section>
+            <div class="hard_separator"></div>
+            <section id="projects">
+                <h3><img class="img_icon" src="img/projects.png" alt="my projects" />PROJECTS</h3>
+                <a href="https://tisugra.admhmao.ru/" target="_blank">
+                    <section class="my_project">
+                        <img class="img_icon" src="img/cv_project.png" alt="el" />
+                        <h4>TISUGRA</h4>
+                        <p>90% of projects have private access with authorization.
+                            Here is a part of the subsystems that are part of the global infrastructure.
+                        </p>
+                        <p>
+                            MAIN STACK: <span>JAVA, Spring, Oracle Pl/SQL, PostgreSQL, Thymleaf, JUnit, MicroStrategy</span>
+                        </p>
+                    </section>
+                </a>
+                <div class="separator"></div>
+                <a href="https://tisugra.admhmao.ru/transport" target="_blank">
+                    <section class="my_project">
+                        <img class="img_icon" src="img/cv_transport.PNG" alt="el" />
+                        <h4>TRANSPORT SYSTEM</h4>
+                        <p>An analog of 2GIS-a and Yandex-maps, it was created when he had not yet come to the region.
+                            The server part of the open system and the server part of the closed part for general access were developed.
+                        </p>
+                        <p>
+                            MAIN STACK: <span>JAVA, Spring, Oracle Pl/SQL, PostgreSQL, Thymleaf, JUnit</span>
+                        </p>
+                    </section>
+                </a>
+                <div class="separator"></div>
+                <a href="https://tisugra.admhmao.ru/eservice-gko" target="_blank">
+                    <section class="my_project">
+                        <img class="img_icon" src="img/cv_eservice.PNG" alt="el" />
+                        <h4>SERVICE DELIVERY SYSTEM</h4>
+                        <p>The user can request the provision of services through the operator or independently with confirmation of his right to represent the interests of the organization.
+                            The operator has the opportunity to prepare all the necessary documents for the provision of the service and record all the stages of its provision and implementation.
+                        </p>
+                        <p>
+                            MAIN STACK: <span>JAVA, Spring, Oracle Pl/SQL, PostgreSQL, Thymleaf, JUnit</span>
+                        </p>
+                    </section>
+                </a>
+            </section>
+            <div class="hard_separator"></div>
+            <section id="english_level">
+                <h3><img class="img_icon" src="img/english.png" alt="el" />ENGLISH LEVEL</h3>
+                <ul>
+                    <li>
+                        <p>A2</p>
+                        <p>At the moment, I am raising my lavel with an online-teacher</p>
+                    </li>
+                </ul>
+            </section>
         </div>
         <div class="right-block">
             <div id="brief_information">
@@ -233,25 +303,58 @@
                     <h3><img class="img_icon" src="img/code_examples.webp" alt="ce" />
                         CODE EXAMPLES</h3>
                 </div>
-                https://www.codewars.com/kata/find-the-stray-number
-                <pre><code>
-function stray(numbers) {
-    numbers.sort();
-    return numbers[0]!=numbers[1] ? 
-        numbers[0] : numbers[numbers.length-1];
-}                  
+                Part of the custom plugin code in the project
+                <pre>
+                    <code class="language-js">
+function (_, L10n, Logger, Utils, ArrayUtils, WindowView, CompositePlugin, DTView) {
+    var ContractRegistryPlugin = CompositePlugin.extend({
+        name: 'ContractRegistry Plugin',
+        description: 'Плагин',
+        configuration: {
+            tableId: 912,
+        },
+        components: [
+        // Comments
+        {
+            slot: {
+                name: DTView.PluginSlot.INIT,
+                context: DTView,
+            },
+            run: function (table) {
+                if (isDisabled(this.getPlugin(), table)) {
+                    return;
+                }
+                if (isMatching(this.getPlugin(), table) !== true) {
+                    return;
+                }
+                table.setOption('contextSearch', true);
+                table.setOption('defaultEditMode', DataTableView.EditMode.WINDOW);
+                /*Comments*/
+                this.listenToOnce(table, DVEvent.ENTITY_READY, this._onTableReady);
+            },
+            _onTableReady: function (event) {
+                var table = event.sender;
+                this.listenTo(table, _.fromPairs([
+                [DataTableViewEvent.BEFORE_EDIT, this._onTableBeforeEdit],
+                [DataTableViewEvent.CHANGE, this._onTableChange],
+                [DataTableViewEvent.SELECT, this._onTableSelect],
+                [DataTableViewEvent.DOUBLE_CLICK, this._onTableDoubleClick],
+                ]));
+                this.listenToOnce(table, DataTableViewEvent.DESTROY, this._onTableDestroy);
+            },
+            ...
                 </code></pre>
             </div>
         </div>
 
         <div style="clear: both;"></div>
         <div class="print-block">
-            <input type="button" value="РАСПЕЧАТАТЬ" onclick="window.print()" />
+            <input class="print-button" type="button" value="РАСПЕЧАТАТЬ" onclick="window.print()" />
         </div>
     </main>
     <footer>
         <p>© 2021</p>
-        <p>My GitHub: <a href="https://github.com/SmershRoot">SmershRoot</a></p>
+        <p>My GitHub: <a class="odd_a" href="https://github.com/SmershRoot">SmershRoot</a></p>
         <p><a href="https://rs.school/js/"><img class="rslogo" src="https://rs.school/images/rs_school_js.svg"
                     alt="Logo RS SCHOOL"></a></p>
     </footer>
